@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <!-- 0초 뒤에 바로 이동하라는 명령어입니다 -->
-    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyTPbsuQaKHRES0NaUXrWcAVZSactRazRYsQdLttkGlHYUbEKRA76YznIWr1nWBzrsd/exec">
-    <title>딩동 교실 프로젝트로 이동 중...</title>
+  <base target="_top">
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #5C88DA;
+      --success: #65A30D;
+      --bg-grid: #EBF2FA;
+      --text: #2C3E50;
+    }
+    body { 
+      font-family: 'Pretendard', sans-serif; 
+      background-color: var(--bg-grid);
+      background-image: linear-gradient(#D6E4F0 1px, transparent 1px), linear-gradient(90deg, #D6E4F0 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: var(--text);
+      display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0;
+    }
+    .main-box { width: 440px; background: white; padding: 40px; border-radius: 32px; border: 3px solid #94A3B8; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; }
+    .ribbon-tag { display: inline-block; background: #FDE047; color: #451A03; padding: 6px 20px; font-size: 14px; font-weight: 800; border-radius: 4px; margin-bottom: 15px; }
+    .btn { background: var(--primary); color: white; border: none; padding: 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: 800; font-size: 18px; box-shadow: 0 6px 0 #3B82F6; margin: 20px 0; transition: 0.2s; text-decoration: none; display: block; }
+    .btn:active { transform: translateY(4px); box-shadow: none; }
+    .info-card { background: #F8FAFC; border: 2px solid #E2E8F0; padding: 20px; border-radius: 20px; text-align: left; font-size: 13px; line-height: 1.6; }
+    .info-title { font-weight: 800; color: #475569; margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
+  </style>
 </head>
 <body>
-    <p>잠시만 기다려 주세요. 딩동 교실 앱으로 이동합니다...</p>
-    <script>
-        // 만약의 상황을 대비해 자바스크립트로도 한번 더 이동 명령을 내립니다.
-        window.location.replace("https://script.google.com/macros/s/AKfycbyTPbsuQaKHRES0NaUXrWcAVZSactRazRYsQdLttkGlHYUbEKRA76YznIWr1nWBzrsd/exec");
-    </script>
+
+<div class="main-box">
+  <div class="ribbon-tag">딩동 교실 프로젝트</div>
+  <h1 style="font-size: 32px; font-weight: 800; margin: 0 0 10px 0;">딩동, 교실</h1>
+  <p style="color: #64748B; font-weight: 600; margin-bottom: 30px;">행복한 우리 교실을 실시간으로 긴밀하게 연결합니다</p>
+
+  <!-- 서비스 실행 버튼 -->
+  <a href="https://script.google.com/macros/s/AKfycbyTPbsuQaKHRES0NaUXrWcAVZSactRazRYsQdLttkGlHYUbEKRA76YznIWr1nWBzrsd/exec" class="btn">🚀 서비스 실행하기</a>
+
+  <!-- 안내 정보 -->
+  <div class="info-card">
+    <div class="info-title">💡 테스트 가이드</div>
+    <ul style="padding-left: 18px; margin: 0;">
+      <li><b>개인정보 보호:</b> 학생 정보는 1-1반 더미 데이터입니다.</li>
+      <li><b>학교 인증 코드:</b> <code>2026학교호출</code></li>
+      <li><b>테스트 교사 계정:</b> ID <code>1111</code> / PW <code>1111</code></li>
+    </ul>
+  </div>
+</div>
+
 </body>
 </html>
