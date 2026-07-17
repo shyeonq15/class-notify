@@ -19,11 +19,28 @@
     }
     .main-box { width: 420px; background: white; padding: 35px; border-radius: 32px; border: 3px solid #94A3B8; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; }
     .ribbon-tag { display: inline-block; background: #FDE047; color: #451A03; padding: 4px 16px; font-size: 13px; font-weight: 800; border-radius: 4px; margin-bottom: 12px; }
-    /* 버튼 패딩을 살짝 줄여서 날렵하게 */
-    .btn { background: var(--primary); color: white; border: none; padding: 16px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: 800; font-size: 17px; box-shadow: 0 5px 0 #3B82F6; margin: 20px 0; transition: 0.2s; text-decoration: none; display: block; }
+    
+    /* 여기서 버튼을 살짝 안쪽으로 숨겼습니다 */
+    .btn { 
+        background: var(--primary); 
+        color: white; 
+        border: none; 
+        padding: 15px; 
+        border-radius: 16px; /* 카드보다 둥근 정도를 낮춰서 안쪽에 쏙 들어가게 함 */
+        cursor: pointer; 
+        width: 100%; 
+        font-weight: 800; 
+        font-size: 17px; 
+        box-shadow: 0 4px 0 #3B82F6; 
+        margin: 20px 0; 
+        transition: 0.2s; 
+        text-decoration: none; 
+        display: block;
+        box-sizing: border-box; /* 패딩이 삐져나가지 않게 함 */
+    }
     .btn:active { transform: translateY(4px); box-shadow: none; }
-    /* 테스트 가이드 박스 패딩을 16px로 줄이고 여백 조정 */
-    .info-card { background: #F8FAFC; border: 2px solid #E2E8F0; padding: 16px; border-radius: 20px; text-align: left; font-size: 12.5px; }
+    
+    .info-card { background: #F8FAFC; border: 2px solid #E2E8F0; padding: 18px; border-radius: 20px; text-align: left; font-size: 13px; }
     .info-title { font-weight: 800; color: #475569; margin-bottom: 10px; display: flex; align-items: center; gap: 5px; }
     ul { padding-left: 18px; margin: 0; list-style-type: disc; }
     li { margin-bottom: 5px; color: #475569; }
@@ -41,7 +58,7 @@
   <div class="info-card">
     <div class="info-title">💡 테스트 가이드</div>
     <ul>
-      <li><b>개인정보 보호:</b> 1-1반 더미 데이터만 포함됨</li>
+      <li><b>개인정보 보호:</b> 1-1반 더미 데이터 포함</li>
       <li><b>학교 인증 코드:</b> <code>2026학교호출</code></li>
       <li><b>테스트 교사 계정:</b> ID <code>1111</code> / PW <code>1111</code></li>
     </ul>
