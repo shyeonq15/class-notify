@@ -6,7 +6,6 @@
   <style>
     :root {
       --primary: #5C88DA;
-      --success: #65A30D;
       --bg-grid: #EBF2FA;
       --text: #2C3E50;
     }
@@ -18,29 +17,31 @@
       color: var(--text);
       display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0;
     }
-    .main-box { width: 440px; background: white; padding: 40px; border-radius: 32px; border: 3px solid #94A3B8; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; }
-    .ribbon-tag { display: inline-block; background: #FDE047; color: #451A03; padding: 6px 20px; font-size: 14px; font-weight: 800; border-radius: 4px; margin-bottom: 15px; }
-    .btn { background: var(--primary); color: white; border: none; padding: 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: 800; font-size: 18px; box-shadow: 0 6px 0 #3B82F6; margin: 20px 0; transition: 0.2s; text-decoration: none; display: block; }
+    .main-box { width: 420px; background: white; padding: 35px; border-radius: 32px; border: 3px solid #94A3B8; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; }
+    .ribbon-tag { display: inline-block; background: #FDE047; color: #451A03; padding: 4px 16px; font-size: 13px; font-weight: 800; border-radius: 4px; margin-bottom: 12px; }
+    /* 버튼 패딩을 살짝 줄여서 날렵하게 */
+    .btn { background: var(--primary); color: white; border: none; padding: 16px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: 800; font-size: 17px; box-shadow: 0 5px 0 #3B82F6; margin: 20px 0; transition: 0.2s; text-decoration: none; display: block; }
     .btn:active { transform: translateY(4px); box-shadow: none; }
-    .info-card { background: #F8FAFC; border: 2px solid #E2E8F0; padding: 20px; border-radius: 20px; text-align: left; font-size: 13px; line-height: 1.6; }
-    .info-title { font-weight: 800; color: #475569; margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
+    /* 테스트 가이드 박스 패딩을 16px로 줄이고 여백 조정 */
+    .info-card { background: #F8FAFC; border: 2px solid #E2E8F0; padding: 16px; border-radius: 20px; text-align: left; font-size: 12.5px; }
+    .info-title { font-weight: 800; color: #475569; margin-bottom: 10px; display: flex; align-items: center; gap: 5px; }
+    ul { padding-left: 18px; margin: 0; list-style-type: disc; }
+    li { margin-bottom: 5px; color: #475569; }
   </style>
 </head>
 <body>
 
 <div class="main-box">
   <div class="ribbon-tag">딩동 교실 프로젝트</div>
-  <h1 style="font-size: 32px; font-weight: 800; margin: 0 0 10px 0;">딩동, 교실</h1>
-  <p style="color: #64748B; font-weight: 600; margin-bottom: 30px;">행복한 우리 교실을 실시간으로 긴밀하게 연결합니다</p>
+  <h1 style="font-size: 28px; font-weight: 800; margin: 0 0 8px 0;">딩동, 교실</h1>
+  <p style="color: #64748B; font-weight: 600; margin-bottom: 25px; font-size: 14px;">행복한 우리 교실을 실시간으로 긴밀하게 연결합니다</p>
 
-  <!-- 서비스 실행 버튼 -->
   <a href="https://script.google.com/macros/s/AKfycbyTPbsuQaKHRES0NaUXrWcAVZSactRazRYsQdLttkGlHYUbEKRA76YznIWr1nWBzrsd/exec" class="btn">🚀 서비스 실행하기</a>
 
-  <!-- 안내 정보 -->
   <div class="info-card">
     <div class="info-title">💡 테스트 가이드</div>
-    <ul style="padding-left: 18px; margin: 0;">
-      <li><b>개인정보 보호:</b> 학생 정보는 1-1반 더미 데이터입니다.</li>
+    <ul>
+      <li><b>개인정보 보호:</b> 1-1반 더미 데이터만 포함됨</li>
       <li><b>학교 인증 코드:</b> <code>2026학교호출</code></li>
       <li><b>테스트 교사 계정:</b> ID <code>1111</code> / PW <code>1111</code></li>
     </ul>
